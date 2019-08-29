@@ -20,6 +20,7 @@ class User
     end
 
     def post_tweet(message)
+        #self is the instance of the user
         Tweet.new(message, self)
     end
 
