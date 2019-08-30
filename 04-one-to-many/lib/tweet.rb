@@ -1,6 +1,5 @@
 class Tweet
 
-<<<<<<< HEAD
     attr_reader(:content, :author)
     # Class Variable =>
     @@all = []
@@ -19,7 +18,6 @@ class Tweet
     
 
 end
-=======
   attr_reader :content, :author
   @@all = []
 
@@ -35,4 +33,3 @@ end
   end
 
 end
->>>>>>> 282919c1d115b05e358ef903eb207a1569cd7d83

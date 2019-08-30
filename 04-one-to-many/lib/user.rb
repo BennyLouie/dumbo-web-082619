@@ -1,5 +1,4 @@
 class User
-<<<<<<< HEAD
     # Instance Methods
     attr_reader(:name, :handle)
 
@@ -26,7 +25,6 @@ class User
     end
 
 end
-=======
   # Instance methods
   attr_reader :name, :handle
 
@@ -71,4 +69,3 @@ end
 
 
 end
->>>>>>> 282919c1d115b05e358ef903eb207a1569cd7d83
