@@ -26,7 +26,7 @@
   * `Tweet#content` that returns a string
   * `Tweet#user` that returns an instance of the user class
   * `Tweet.all` that returns all the Tweets created.
-  * `Tweet#username` that returns the username of the tweet's user
+  * `Tweet#handle` that returns the handle of the tweet's user
 
 
 1. It's hard to call an instance method from a class method because you need an instance
