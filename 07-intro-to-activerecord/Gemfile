@@ -1,6 +1,10 @@
 source "https://rubygems.org"
 
+<<<<<<< HEAD
 gem 'activerecord', "~>5.2.3"
+=======
+gem 'activerecord', "~> 5.2.3"
+>>>>>>> 13203772c5e58775505fccc258dbfabe6a2e9c25
 gem 'sinatra-activerecord'
 gem 'require_all'
 gem 'sqlite3'

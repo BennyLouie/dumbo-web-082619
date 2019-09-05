@@ -9,5 +9,10 @@ end
 
 desc "Say hello"
 task :hello do
+<<<<<<< HEAD
   puts "Hello!"
 end
+=======
+  puts "Hello"
+end
+>>>>>>> 13203772c5e58775505fccc258dbfabe6a2e9c25
