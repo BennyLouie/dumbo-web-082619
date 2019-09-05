@@ -13,7 +13,12 @@
 
 CRUD -
 Creating
+<<<<<<< HEAD
 Reading Updating 
+=======
+Reading
+Updating
+>>>>>>> c8619aef6edf1c8a32e1819acb50983596c6566c
 Deleting
 
 ## Challenges
@@ -27,16 +32,25 @@ Deleting
 2. Write the SQL to select the artist with the name "Black Sabbath"
 
 ```SQL
+<<<<<<< HEAD
   -- SELECT name FROM artists
   -- WHERE name = 'Black Sabbath';
   SELECT name FROM artists
   WHERE name LIKE '%Black Sabbath%';
+=======
+  SELECT name FROM artists
+  WHERE name LIKE "Black Sabbath";
+>>>>>>> c8619aef6edf1c8a32e1819acb50983596c6566c
 ```
 
 3. Write the SQL to create a table named 'fans' with an autoincrementing ID that's a primary key and a name field of type text
 
 ```sql
+<<<<<<< HEAD
   CREATE TABLE fans (
+=======
+  CREATE TABLE fans(
+>>>>>>> c8619aef6edf1c8a32e1819acb50983596c6566c
     id INTEGER PRIMARY KEY,
     name TEXT
   );
@@ -53,26 +67,46 @@ Deleting
 ```sql
   INSERT INTO fans (name, artist_id) VALUES ("Leizl", 169), ("Dan", 169);
   INSERT INTO fans (name, artist_id) VALUES ("Eric", (SELECT id FROM artists WHERE name = "Black Eyed Peas"));
+<<<<<<< HEAD
+=======
+
+>>>>>>> c8619aef6edf1c8a32e1819acb50983596c6566c
 ```
 
 6. How would you update your name in the fans table to be your new name?
 
  ```sql
+<<<<<<< HEAD
   UPDATE fans 
   SET artist_id = 169
+=======
+  UPDATE fans
+  SET artist_id = 23
+>>>>>>> c8619aef6edf1c8a32e1819acb50983596c6566c
   WHERE id = 2;
  ```
 
 7. Write the SQL to return fans that are not fans of the black eyed peas.
 
 ```sql
+<<<<<<< HEAD
   SELECT * FROM fans WHERE artist_id != 169;
+=======
+  SELECT * FROM fans
+  WHERE artist_id != 169;
+>>>>>>> c8619aef6edf1c8a32e1819acb50983596c6566c
 ```
 
 8. Write the SQL to display an artists name next to their album title
 
 ```sql
+<<<<<<< HEAD
   SELECT artists.name, albums.title FROM artists INNER JOIN albums ON artists.id = albums.artist_id GROUP BY artists.name;
+=======
+  SELECT * FROM artists
+  JOIN albums
+  ON albums.artist_id = artists.id;
+>>>>>>> c8619aef6edf1c8a32e1819acb50983596c6566c
 ```
 
 9. Write the SQL to display artist name, album name and number of tracks on that album
@@ -86,7 +120,11 @@ AGGREGATE FUNCTION
   JOIN tracks
   ON tracks.album_id = albums.id
   GROUP BY albums.id
+<<<<<<< HEAD
   ORDER BY COUNT(tracks.id);
+=======
+  ORDER BY COUNT(tracks.id) DESC;
+>>>>>>> c8619aef6edf1c8a32e1819acb50983596c6566c
 ```
 
 9.5. Remove a fan
