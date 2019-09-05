@@ -4,7 +4,7 @@ require 'pry'
 query = "
 SELECT artists.name, albums.title, COUNT(tracks.id) FROM artists
 JOIN albums
-on albums.artist_id = artists.id
+On albums.artist_id = artists.id
 JOIN tracks
 ON tracks.album_id = albums.id
 GROUP BY albums.id
