@@ -2,6 +2,10 @@ require 'pry'
 require_relative "./lib/tweet"
 require_relative "./lib/user"
 require_relative "./lib/like"
+<<<<<<< HEAD
+=======
+
+>>>>>>> 60bd11dc69783491cef9ddf053591be51c83eac7
 
 coffee_dad = User.new("Albert", "coffee_dad")
 kanye = User.new("Kanye West", "ye")
@@ -17,10 +21,34 @@ k3 = Tweet.new("I need this horse", kanye)
 coffee_dad.post_tweet("I need coffeee")
 
 Like.new(kanye, cd3)
+<<<<<<< HEAD
 Like.new(coffee_dad, cd3)
 
 Like.new(coffee_dad, k3)
 Like.new(kanye, k2)
+=======
+Like.new(kanye, k2)
+
+Like.new(coffee_dad, cd3)
+Like.new(coffee_dad, k3)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+>>>>>>> 60bd11dc69783491cef9ddf053591be51c83eac7
 
 
 
