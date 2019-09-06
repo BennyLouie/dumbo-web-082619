@@ -1,4 +1,11 @@
 class Vet < ActiveRecord::Base
+  has_many :visits
+  has_many :cats, through: :visits
+
+  def cat_names
+    names =  self.cats.map { |cat| cat.name }
+    names.uniq
+  end
   # CREATE
   # john = Cat.new()
   # john.save
