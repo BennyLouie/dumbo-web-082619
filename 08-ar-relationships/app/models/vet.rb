@@ -3,8 +3,12 @@ class Vet < ActiveRecord::Base
   has_many :cats, through: :visits
 
   def cat_names
+<<<<<<< HEAD
     names =  self.cats.map { |cat| cat.name }
     names.uniq
+=======
+    self.cats.map { |cat| cat.name }
+>>>>>>> 0c0f358c91cc10bf80eadcff05453abad13822a1
   end
   # CREATE
   # john = Cat.new()
