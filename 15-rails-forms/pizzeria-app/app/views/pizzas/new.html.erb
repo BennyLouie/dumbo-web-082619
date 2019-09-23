@@ -1,0 +1,34 @@
+<h1>make a new ZAAAAAAAA</h1>
+
+<!--<h2>HTML FORM</h2>
+<form action="/pizzas" method="post">
+
+  <label for="name">Name</label>
+  <input type="text" name="name">
+
+  <label for="cost">Cost</label>
+  <input type="number" name="cost">
+
+  <label for="size">Size</label>
+  <input type="text" name="size">
+
+  <label for="extra_cheese">Extra 🧀</label>
+  <input type="checkbox" name="extra_cheese">
+
+  <input type="submit" value="submit">
+</form>-->
+
+<h2>form_for</h2>
+
+<%= form_for @pizza do |f| %>
+  <%= f.label :name %>
+  <%= f.text_field :name %>
+
+  <%= f.label :size %>
+  <%= f.text_field :size %>
+
+  <%= f.label :extra_cheese, "Extra 🧀" %>
+  <%= f.check_box :extra_cheese %>
+
+  <%= f.submit %>
+<% end %>
