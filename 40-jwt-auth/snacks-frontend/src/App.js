@@ -1,4 +1,4 @@
-import React from 'react';
+limport React from 'react';
 import './App.css';
 import LogIn from './LogIn'
 import SnackDashboard from './SnackDashboard'
